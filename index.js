@@ -31,31 +31,11 @@ fs.readdir("./commands/", (err, files) => {
 })
 
 
-require('http').createServer().listen(3000)
-
-
 bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is online!`)
 
-    bot.user.setActivity("Mineraalwater.ga", { type: "PLAYING" });
-
-});
-
-bot.on("guildMemberAdd", member => {
-
-    var role = member.guild.roles.cache.find((role) => role.name === "Bezoekers");
-
-    if (!role) return;
-
-    member.addRole(role);
-
-    const channel = member.guild.channels.cache.find(c => c.name == "welkom");
-
-    if (!channel) return;
-
-    channel.send(`Welkom op de server ${member}`);
-
+    bot.user.setActivity("MineraalDesign", { type: "PLAYING" });
 
 });
 
@@ -163,4 +143,4 @@ bot.on("message", async message => {
 });
 
 
-bot.login(process.env.token);
+bot.login(botConfig.token);

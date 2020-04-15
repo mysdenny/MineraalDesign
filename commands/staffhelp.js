@@ -16,5 +16,5 @@ return message.channel.send(serverEmbed);
 }
 
 module.exports.help ={
-    name: "staffhelp"
+    name: "Teamhelp"
 }

@@ -5,15 +5,12 @@ module.exports.run = async(bot, message, arguments) => {
     var serverEmbed = new discord.RichEmbed()
     .setDescription("Alle commands")
     .setColor("#42f5aa")
-    .addField("Speler commands", "Dit zijn de commands die spelers kunnen gebruiken")
+    .addField("Bezoeker commands", "Dit zijn de commands die bezoekers kunnen gebruiken")
     .addField("!help", "Geeft commando lijst")
-    .addField("!ip", "Geeft het ip")
-    .addField("!cijferip", "Geeft het ip")    
-    .addField("!idee", "Geef je idee aan ons")
-    .addField("!level", "Geeft je level")
+    .addField("!mineraalwater", "Geeft de mineraalwater discord")  
     .addField("!serverinfo", "Geeft info over de server")
     .addField("!ticket", "Maakt een ticket")    
-    .addField("!idee", "Geef je idee aan ons")
+    .addField("!review", "Geef een beoordeling")
 return message.channel.send(serverEmbed);
 
 

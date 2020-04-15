@@ -1,25 +1,18 @@
 {
   "name": "mineraaldesign",
   "version": "1.0.0",
-  "description": "Een bot",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mysdenny/MineraalDesign.git"
-  },
-  "keywords": [
-    "bot"
-  ],
-  "author": "Denny Hooijmans",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mysdenny/MineraalDesign/issues"
-  },
-  "homepage": "https://github.com/mysdenny/MineraalDesign#readme",
   "dependencies": {
-    "discord.js": "^12.1.1"
-  }
+    "discord.js": "^11.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "Denny",
+  "license": "ISC"
 }
